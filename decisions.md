@@ -8,20 +8,22 @@
 > Une seule option implémentée jusqu'à l'inférence. Les 2 autres sont
 > estimées (mini-prototypes + sources publiques).
 
-**Choix** : ☐ Option A (CNN scratch) ☐ Option B (Transfer learning) ☐ Option C (Zero-shot CLIP)
+**Choix** : ☐ Option A (CNN scratch) ☑ Option B (Transfer learning) ☐ Option C (Zero-shot CLIP)
 
 **Argument** :
-- ...
-- ...
-- ...
+- On a ~300 images par classe. C'est trop peu pour entraîner un CNN from scratch correctement, mais suffisant pour le transfer learning.
+- Le transfer learning part d'un modèle déjà entraîné (ResNet-18) et n'a besoin d'apprendre que la dernière couche → entraînement rapide, même sur CPU.
+- Le zero-shot (CLIP) ne demande aucune donnée, mais on en a → pas la meilleure option ici.
+
+**Note** : on implémente aussi A (CNN from scratch) à côté, pour avoir deux vrais résultats mesurés à comparer, plutôt qu'un mesuré et un estimé.
 
 ## 2. Répartition des tâches binôme
 
-| Tâche | Membre 1 (`<prénom1>`) | Membre 2 (`<prénom2>`) | Modalité |
+| Tâche | Membre 1 (`<prénom1>`) | Membre 2 (Franck) | Modalité |
 |---|---|---|---|
 | Setup repo + EDA | ... | ... | pair-coding MP ? |
-| Implémentation option | ... | ... | ... |
-| Comparatif économique | ... | ... | ... |
+| Implémentation option | ... | Option A (CNN from scratch) | ... |
+| Comparatif économique | ... | Option A (mesuré) + report Option C (estimé, depuis `ressources/03_Zero_shot_CLIP_essentiel.md`) | ... |
 | README + restitution | ... | ... | ... |
 
 ## 3. Coordination Discord
