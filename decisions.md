@@ -19,7 +19,7 @@
 
 ## 2. Répartition des tâches binôme
 
-| Tâche | Membre 1 (`<prénom1>`) | Membre 2 (Franck) | Modalité |
+| Tâche | Membre 1 (Alexandre) | Membre 2 (Franck) | Modalité |
 |---|---|---|---|
 | Setup repo + EDA | ... | ... | pair-coding MP ? |
 | Implémentation option | ... | Option A (CNN from scratch) | ... |
@@ -52,4 +52,4 @@
 
 ---
 
-*Décisions tracées par le binôme `<prénom1>` × `<prénom2>` — `<date>`.*
+*Décisions tracées par le binôme Alexandre × Franck — 2026-08-19.*
